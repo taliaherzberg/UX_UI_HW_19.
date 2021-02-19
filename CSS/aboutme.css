@@ -1,0 +1,226 @@
+@media only screen and (max-width: 1200px) {
+    footer.footer {
+        color: white;
+        font-size: 18px;
+    }
+    div.footerLeft {
+        margin-left: 30px;
+    }
+    div.footerRight {
+        margin-right: 30px;
+    }
+    div.Photo {
+        background-image: url(../images/portfolio-photo-small.png);
+        width: 370px;
+        height: 681px;
+    }
+    
+    h1.Hello {
+        font-size: 36px;
+    }
+    
+    .JobTitle {
+        font-size: 10px;
+    }
+    
+    .textBody {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 910px) {
+    div.logo {
+        display: none;
+    }
+    a.logoMedium {
+        margin-left: 50px;
+        height: 90px;
+        width: 90px;
+        float: left;
+        margin-top: 45px;
+        background-image: url(../images/Logo-MEDIUM.png);
+    }
+    ul {
+        margin-right: 20px;
+        float: right;
+    }
+    li.inline-block {
+        font-size: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer.footer {
+        color: white;
+        font-size: 14px;
+    }
+    section.Content {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "Photo" 
+        "textAbout";
+    }
+    div.Photo {
+        grid-area: Photo;
+        align-items: center;
+    }
+    div.textAbout {
+        grid-area: textAbout;
+        width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    }
+
+  @media only screen and (max-width: 700px) {
+    div.logoMedium {
+        display: none;
+    }
+    a.logoSmall {
+        margin-left: 20px;
+        height: 70px;
+        width: 70px;
+        float: left;
+        margin-top: 45px;
+        background-image: url(../images/Logo-SMALL.png);
+    }
+    ul {
+        margin-right: 10px;
+        float: right;
+    }
+    li.inline-block {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    footer.footer {
+        font-size: 10px;
+    }
+    div.footerLeft {
+        margin-left: 10px;
+    }
+    div.footerRight {
+        margin-right: 10px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    height: 1px;
+    background-color: white;
+}
+.logo {
+    float: left;
+    margin-left: 94px;
+    margin-top: 23px;
+    height: 143px;
+    margin-bottom: 25px;
+}
+ul {
+    margin-right: 62px;
+    float: right;
+
+}
+.inline-block {
+    display: inline-block;
+    padding: 31px;
+    background-color: white;
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom:102px; 
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.active {
+    text-decoration: underline #480080 4px;
+    text-underline-offset: 5px;
+    text-underline-position: under;
+}
+
+.inactive:hover {
+    cursor: pointer;
+    color: #480080;
+}
+
+.Content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "Photo textAbout";
+    margin-top: 226px;
+}
+
+.Photo {
+    grid-area: Photo;
+    background-image: url(../images/Portfolio_Photo.png);
+    width: 442px;
+    height: 664px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textAbout {
+    grid-area: textAbout;
+    margin-right: 50px;
+}
+
+.Hello {
+    grid-area: Hello;
+    font-size: 48px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.JobTitle {
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.textBody {
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 20px;
+}
+
+.footer {
+    position:absolute;
+    margin-top: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #200039;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    font-family: 'Roboto Mono', monospace;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "footerLeft footerRight";
+ }
+
+ .footerLeft {
+     grid-area: footerLeft;
+     text-align: left;
+     margin-left: 40px;
+ }
+ 
+ .footerRight {
+     grid-area: footerRight;
+     cursor: pointer;
+     text-align: right;
+     margin-right: 40px;
+ }
+
+ a {
+    text-decoration: none;
+    color: black;
+  }
+
+a:hover {
+    color: #480080;
+}
