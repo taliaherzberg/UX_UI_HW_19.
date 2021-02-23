@@ -57,6 +57,16 @@
     div.footerRight {
         margin-right: 30px;
     }
+    h1.title {
+        font-size: 10px;
+    }
+    a#scroll {
+    margin-top: 340px;
+    }
+    div.HeroText {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 @media only screen and (max-width: 910px) {
     div.logo {
@@ -83,16 +93,17 @@
         font-size: 38px;
         margin-left: 50px;
     }
-    div.Paragraph {
-        font-size: 28px;
-        margin-left: 50px;
-        margin-right: 50px;
+    p.Paragraph {
+        font-size: 22px;
     }
-    .CaseStudiesThumbnail {
+    section.CaseStudiesThumbnail {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    section.Row1 {
+        margin-top: 500px;
     }
     div.Box1 {
         height: 540px;
@@ -146,6 +157,9 @@
         color: white;
         font-size: 14px;
     }
+    a#scroll {
+        display: none;
+        }
     }
 
   @media only screen and (max-width: 700px) {
@@ -172,7 +186,7 @@
     div.HeroText {
         font-size: 28px
     }
-    div.Paragraph {
+    p.Paragraph {
         font-size: 18px;
     }
     footer.footer {
@@ -184,18 +198,20 @@
     div.footerRight {
         margin-right: 10px;
     }
-    .CaseStudiesThumbnail {
+    section.CaseStudiesThumbnail {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    section.Row1 {
+        margin-top: 500px;
     }
     div.Box1 {
         background-image: url(../images/PACT-smaller.png);
         height: 400px;
         width: 400px;
         margin: 10px;
-        margin-top: 100px;
     }
     div.Box2 {
         background-image: url(../images/CSA-smaller.png);
@@ -220,7 +236,6 @@
         height: 400px;
         width: 400px;
         margin: 10px;
-        margin-top: 100px;
     }
     div.Box2:hover {
         background-image: url(../images/CSA-Hover-Smaller.png);
@@ -282,62 +297,80 @@ ul {
     color: #480080;
 }
 .HeroText {
-    margin-top: 296px;
-    font-size: 48px;
+    margin-top: 220px;
+    font-size: 40px;
     font-family: 'Roboto Mono', monospace;
     font-weight: lighter;
-    margin-left: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.Header {
+    white-space: nowrap
+}
+.title {
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: lighter;
+    margin-top: 5px;
 }
 .Paragraph {
     position: absolute;
-    top: 378px;
     font-size: 24px;
     font-family: 'Roboto Mono', monospace;
     font-weight: normal;
     margin-right: 100px;
+    margin-top: 15px;
 }
 .CaseStudiesThumbnail {
     display: flex;
     justify-content: center;
 }
 .Row1 {
-    margin-top: 223px;
+    margin-top: 220px;
 }
 .Box1 {
     height: 540px;
     width: 540px;
     background-image: url(../images/PACT.png);
     margin: 15px;
+    cursor: pointer;
 }
 .Box1:hover {
     background-image: url(../images/PACT-Hover.png);
+    transition: 0.3s;
 }
 .Box2 {
     height: 540px;
     width: 540px;
     background-image: url(../images/CSA.png);
     margin: 15px;
+    cursor: pointer;
 }
 .Box2:hover {
     background-image: url(../images/CSA-Hover.png);
+    transition: 0.3s;
 }
 .Box3 {
     height: 540px;
     width: 540px;
     background-image: url(../images/SIP.png);
     margin: 15px;
+    cursor: pointer;
 }
 .Box3:hover {
     background-image: url(../images/SIP-Hover.png);
+    transition: 0.3s;
 }
 .Box4 {
     height: 540px;
     width: 540px;
     background-image: url(../images/Sonder.png);
     margin: 15px;
+    cursor: pointer;
 }
 .Box4:hover {
     background-image: url(../images/Sonder-Hover.png);
+    transition: 0.3s;
 }
 
 .footer {
@@ -374,4 +407,45 @@ a {
 
 a:hover {
     color: #480080;
+}
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) } 
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  .wave:hover {
+    animation-name: wave-animation-hover;
+    animation-duration: 2.5s;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+
+  @keyframes wave-animation-hover {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) } 
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+.scroll {
+    margin-top: 290px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
