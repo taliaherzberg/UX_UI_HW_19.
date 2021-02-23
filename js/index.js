@@ -1,8 +1,12 @@
 console.log("Your index.js file is loaded correctly!");
 
 $('.scroll').click(function(){
-  $(‘html, body’).animate({
-      scrollTop: $($(this)).offset().top
-  }, 750 );
-  return false;
+   console.log("Your index.js file is loaded correctly!");
+  $("html, body").animate(
+      {scrollTop: $("#Row1").offset().top},
+      400,
+      "swing",
+      function(){
+         }
+      )
 });
